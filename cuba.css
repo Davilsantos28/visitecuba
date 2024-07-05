@@ -1,0 +1,164 @@
+/* Resetando margens e alinhamento de texto */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Configuração de largura e altura da página */
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo de navegação */
+nav div img {
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+    color: black;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Linha horizontal */
+#linha-horizontal {
+    width: 100%;
+    border: 1px solid #AFABA6;
+}
+
+/* Parágrafo */
+p {
+    margin-top: 5px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Contêiner flexível */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Contêiner de topo com imagem de fundo */
+.container-top {
+    background: url('img/top.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Sobreposição de texto na imagem de fundo */
+.overlay {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+/* Destaque de texto */
+span {
+    color: #d4af37;
+}
+
+/* Contêiner de estatísticas */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.stats-container img {
+    width: 60px;
+}
+
+.stat-item {
+    color: #d4af37;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    margin: 2px 0;
+    font-size: 1rem;
+}
+
+/* Contêiner de paisagens */
+.container-paisagens {
+    padding: 20px;
+}
+
+.container-paisagens img {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 518px;
+    height: auto;
+}
+
+.image {
+    padding-right: 30px;
+}
+
+.image1 {
+    padding-left: 30px;
+}
+
+/* Seções com orientação flexível */
+.section1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Texto */
+.text {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.fotos img {
+    width: 100px;
+    height: 100px;
+    transition: scale 2s;
+}
+
+.fotos img:hover {
+    scale: 4.0;
+}
+
+div .fotos {
+    width: 516px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
