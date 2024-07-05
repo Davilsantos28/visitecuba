@@ -162,3 +162,82 @@ div .fotos {
     margin-right: auto;
     margin-top: 50px;
 }
+
+/* Media Queries para Responsividade */
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+    .container-top {
+        height: 50vh;
+    }
+
+    .overlay h1 {
+        font-size: 3em;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stat-item i {
+        font-size: 2rem;
+    }
+
+    .stat-item p {
+        font-size: 0.8rem;
+    }
+
+    .container-paisagens {
+        padding: 10px;
+    }
+
+    .image, .image1 {
+        padding: 10px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+
+    .fotos img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay h1 {
+        font-size: 2em;
+    }
+
+    .stat-item i {
+        font-size: 1.5rem;
+    }
+
+    .stat-item p {
+        font-size: 0.7rem;
+    }
+
+    .text {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .fotos img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+div .fotos {
+    width: 516px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
