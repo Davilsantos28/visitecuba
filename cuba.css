@@ -138,15 +138,6 @@ span {
     font-size: 18px;
 }
 
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 50px auto;
-    max-width: 90%;
-}
-
 .fotos img {
     width: 100px;
     height: 100px;
@@ -157,7 +148,13 @@ span {
     scale: 4.0;
 }
 
-/* Responsividade */
+div .fotos {
+    width: 516px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
 @media (max-width: 768px) {
     .section2 {
         flex-direction: column;
@@ -167,13 +164,18 @@ span {
     .image {
         padding-right: 0;
     }
-    
+
     .fotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
         max-width: 95%;
     }
 
     .fotos img {
         width: calc(50% - 10px);
+        max-width: 100%;
     }
 }
+
