@@ -137,6 +137,7 @@ span {
     margin-top: 30px;
     font-size: 18px;
 }
+
 .fotos {
     display: flex;
     flex-wrap: wrap;
@@ -155,11 +156,13 @@ span {
 .fotos img:hover {
     transform: scale(4.0);
 }
+
 .custom-footer {
     background-color: #f0f0f0; /* Altere para a cor desejada */
     color: #333; /* Altere para a cor do texto desejada */
     padding: 20px; /* Adicione um padding se necessário */
 }
+
 .rodaper {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -205,18 +208,22 @@ span {
         margin-right: auto;
         margin-top: 50px;
     }
-.rodaper {
-    flex-direction: column; /* Altera a direção dos itens para coluna em telas menores */
-}
-.links {
-    margin-left: 0; /* Remove o espaço à esquerda para alinhar corretamente */
-}
-.rodaper p, .links {
-    margin: 10px; /* Ajusta a margem para alinhar melhor os itens */
-}
+    
+    .rodaper {
+        flex-direction: column; /* Altera a direção dos itens para coluna em telas menores */
+    }
+    
+    .links {
+        margin-left: 0; /* Remove o espaço à esquerda para alinhar corretamente */
+    }
+    
+    .rodaper p, .links {
+        margin: 10px; /* Ajusta a margem para alinhar melhor os itens */
+    }
 }
 
 @media (max-width: 412px) {
+
     .section2 {
         flex-direction: column;
         align-items: center;
@@ -238,14 +245,16 @@ span {
         width: calc(50% - 10px);
         max-width: 100%;
     }
+    
     .rodaper {
         flex-direction: column; /* Altera a direção dos itens para coluna em telas menores */
     }
+    
     .links {
         margin-left: 0; /* Remove o espaço à esquerda para alinhar corretamente */
     }
+    
     .rodaper p, .links {
         margin: 10px; /* Ajusta a margem para alinhar melhor os itens */
     }
 }
-
