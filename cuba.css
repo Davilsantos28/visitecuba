@@ -35,7 +35,7 @@ nav a {
 /* Linha horizontal */
 #linha-horizontal {
     width: 100%;
-    border: 1px solid #AFABA6;
+    border: 1px solid #071e3d;
 }
 
 /* Parágrafo */
@@ -137,25 +137,86 @@ span {
     margin-top: 30px;
     font-size: 18px;
 }
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 516px;
+    margin: 50px auto;
+    gap: 10px;
+}
 
 .fotos img {
-    width: 100px;
+    width: calc(33.33% - 10px);
     height: 100px;
-    transition: scale 2s;
+    transition: transform 2s;
 }
 
 .fotos img:hover {
-    scale: 4.0;
+    transform: scale(4.0);
+}
+.custom-footer {
+    background-color: #f0f0f0; /* Altere para a cor desejada */
+    color: #333; /* Altere para a cor do texto desejada */
+    padding: 20px; /* Adicione um padding se necessário */
+}
+.rodaper {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-div .fotos {
-    width: 516px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+.rodaper p {
+    margin: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Espaço entre o parágrafo e os links */
+}
+
+.links a {
+    margin-bottom: 10px; /* Espaço entre os links */
+    text-decoration: none;
+    color: #071e3d;
 }
 
 @media (max-width: 768px) {
+
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotos img {
+        width: 100px;
+        height: 100px;
+        transition: scale 2s;
+    }
+    
+    .fotos img:hover {
+        scale: 4.0;
+    }
+    
+    div .fotos {
+        width: 516px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+.rodaper {
+    flex-direction: column; /* Altera a direção dos itens para coluna em telas menores */
+}
+.links {
+    margin-left: 0; /* Remove o espaço à esquerda para alinhar corretamente */
+}
+.rodaper p, .links {
+    margin: 10px; /* Ajusta a margem para alinhar melhor os itens */
+}
+}
+
+@media (max-width: 412px) {
     .section2 {
         flex-direction: column;
         align-items: center;
@@ -176,6 +237,15 @@ div .fotos {
     .fotos img {
         width: calc(50% - 10px);
         max-width: 100%;
+    }
+    .rodaper {
+        flex-direction: column; /* Altera a direção dos itens para coluna em telas menores */
+    }
+    .links {
+        margin-left: 0; /* Remove o espaço à esquerda para alinhar corretamente */
+    }
+    .rodaper p, .links {
+        margin: 10px; /* Ajusta a margem para alinhar melhor os itens */
     }
 }
 
